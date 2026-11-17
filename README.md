@@ -63,6 +63,6 @@ python -m unittest discover -s tests -v
 python -m py_compile app.py graph.py tests/test_app.py
 ```
 
-The current suite has 9 test methods. One checks all eight combinations of four topics and two complexity levels; the others cover OpenRouter configuration, SDK request formatting, invalid responses, API errors, and UI history. All network calls are mocked, so these tests do not require a key. The count changed from 10 to 9 when the category and model-routing tests were combined; their checks were retained.
+The current suite has 9 test methods. One checks all eight combinations of four topics and two complexity levels; the others cover OpenRouter configuration, SDK request formatting, invalid responses, API errors, and UI history. All network calls are mocked, so these tests do not require a key.
 
 I also tested two live interview runs through Streamlit AppTest using OpenRouter on November 17, 2026: a database index question used GPT-4.1 Mini, and a multi-region URL shortener question used GPT-4.1. Both returned an answer and two follow-up questions. These live checks were run on [the earlier HW 7-2 version](https://github.com/YitingChen-coder/ai-interview-coach-hw6-1/commit/86d01f7806309542c4344dbb6bf009ff6400e297), before the later refactoring. The current offline suite is separate from these earlier live checks.
